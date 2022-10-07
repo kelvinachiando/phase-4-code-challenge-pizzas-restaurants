@@ -14,8 +14,5 @@
  restaurants = Restaurant.create("id": 1, "name": "Sottocasa NYC", "address": "298 Atlantic Ave, Brooklyn, NY 11201")
  restaurants = Restaurant.create("id": 2, "name": "PizzArte", "address": "69 W 55th St, New York, NY 10019")
 
- #restaurant_pizzas
-#  restaurant_pizzas = Restaurant_pizzas.create("price": 5, "pizza_id": 1, "restaurant_id": 3)
-#  restaurant_pizzas = Restaurant_pizzas.create("price": 6, "pizza_id": 2, "restaurant_id": 2)
 
  puts "✅ Done seeding!"
