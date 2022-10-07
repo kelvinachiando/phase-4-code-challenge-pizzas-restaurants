@@ -21,3 +21,63 @@ Migrating to CreateRestaurantPizzas (20221006234133)
   [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-10-06 23:56:36.174694"], ["updated_at", "2022-10-06 23:56:36.174694"]]
   [1m[36mTRANSACTION (118.3ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPizza Create (35.5ms)[0m  [1m[32mINSERT INTO "pizzas" ("id", "name", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 1], ["name", "Cheese"], ["ingredients", "Dough, Tomato Sauce, Cheese"], ["created_at", "2022-10-07 00:24:52.247009"], ["updated_at", "2022-10-07 00:24:52.247009"]]
+  [1m[36mTRANSACTION (98.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPizza Create (0.2ms)[0m  [1m[32mINSERT INTO "pizzas" ("id", "name", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 2], ["name", "Pepperoni"], ["ingredients", "Dough, Tomato Sauce, Pepperoni"], ["created_at", "2022-10-07 00:24:52.388205"], ["updated_at", "2022-10-07 00:24:52.388205"]]
+  [1m[36mTRANSACTION (85.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurant Create (8.9ms)[0m  [1m[32mINSERT INTO "restaurants" ("id", "name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 1], ["name", "Sottocasa NYC"], ["address", "298 Atlantic Ave, Brooklyn, NY 11201"], ["created_at", "2022-10-07 00:24:52.494591"], ["updated_at", "2022-10-07 00:24:52.494591"]]
+  [1m[36mTRANSACTION (90.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("id", "name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 2], ["name", "PizzArte"], ["address", "69 W 55th St, New York, NY 10019"], ["created_at", "2022-10-07 00:24:52.600310"], ["updated_at", "2022-10-07 00:24:52.600310"]]
+  [1m[36mTRANSACTION (83.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPizza Create (0.4ms)[0m  [1m[32mINSERT INTO "pizzas" ("id", "name", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 1], ["name", "Cheese"], ["ingredients", "Dough, Tomato Sauce, Cheese"], ["created_at", "2022-10-07 00:28:24.828672"], ["updated_at", "2022-10-07 00:28:24.828672"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPizza Create (0.4ms)[0m  [1m[32mINSERT INTO "pizzas" ("id", "name", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 1], ["name", "Cheese"], ["ingredients", "Dough, Tomato Sauce, Cheese"], ["created_at", "2022-10-07 00:30:03.317010"], ["updated_at", "2022-10-07 00:30:03.317010"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/" for ::1 at 2022-10-07 03:35:18 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-2.7.4/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-2.7.4/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.5ms | Allocations: 665)
+Completed 200 OK in 50ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 6456)
+
+
+Started GET "/pizzas" for ::1 at 2022-10-07 03:35:28 +0300
+Processing by PizzasController#index as HTML
+  [1m[36mPizza Load (0.3ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas"[0m
+  ↳ app/controllers/pizzas_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.78ms)
+Completed 200 OK in 174ms (Views: 157.4ms | ActiveRecord: 1.7ms | Allocations: 21619)
+
+
+Started GET "/restaurants" for ::1 at 2022-10-07 03:35:52 +0300
+Processing by RestaurantsController#index as HTML
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.75ms)
+Completed 200 OK in 23ms (Views: 17.0ms | ActiveRecord: 1.1ms | Allocations: 16376)
+
+
+Started GET "/restaurant_pizzas" for ::1 at 2022-10-07 03:36:11 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/restaurant_pizzas"):
+  
+Started GET "/restaurants" for ::1 at 2022-10-07 03:37:09 +0300
+Processing by RestaurantsController#index as HTML
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.73ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
